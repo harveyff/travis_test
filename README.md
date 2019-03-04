@@ -1,2 +1,1 @@
-[![Build Status](https://travis-ci.com/harveyff/travis_test.svg?branch=master)](https://travis-ci.com/harveyff/travis_test)
-test2
+[![Build Status](https://travis-ci.com/harveyff/travis_test.svg?branch=test)](https://travis-ci.com/harveyff/travis_test)
