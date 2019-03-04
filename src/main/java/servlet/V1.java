@@ -48,7 +48,7 @@ public class V1 extends BaseServlet {
 		try {
 			String command = Utils.getString(args, "cmd", "");
 			args.put("agent", request.getHeader("User-Agent"));
-			res.put("text", "hello "+Utils.getIpAddress(request));
+			res.put("text", " hello "+Utils.getIpAddress(request));
 		} catch (Exception e) {
 			res.put("code", 100000);
 			e.printStackTrace();
