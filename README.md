@@ -1,1 +1,0 @@
-[![Build Status](https://travis-ci.com/harveyff/travis_test.svg?branch=test)](https://travis-ci.com/harveyff/travis_test)

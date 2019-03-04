@@ -14,10 +14,37 @@ import javax.servlet.http.HttpServletRequest;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 
+import manager.AssetManager;
 
 public class Utils {
 	public static boolean isDug = true;
+	public static double parseAmout(String amount, int assetId) {
+		double num = 0.0;
+		try {
+			BigDecimal a = new BigDecimal(amount);
+			if (AssetManager.AssetIdMap.get(assetId + "") != null) {
+				BigDecimal b = new BigDecimal(AssetManager.AssetIdMap.get(assetId + "").getString("external_precision"));
+				num = a.divide(b).doubleValue();
+			}
+		} catch (Exception e) {
+			return num;
+		}
+		return num;
+	}
 
+	public static BigInteger parseBigIntegerAmout(String amount, int assetId) {
+		BigInteger num = new BigInteger("0");
+		try {
+			BigDecimal a = new BigDecimal(amount);
+			if (AssetManager.AssetIdMap.get(assetId + "") != null) {
+				BigDecimal b = new BigDecimal(AssetManager.AssetIdMap.get(assetId + "").getString("external_precision"));
+				num = b.multiply(a).toBigInteger();
+			}
+		} catch (Exception e) {
+			return num;
+		}
+		return num;
+	}
 
 	public final static int ANNOUNCE_DURATION_MINUTES = 3;
 

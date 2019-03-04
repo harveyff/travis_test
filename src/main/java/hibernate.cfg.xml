@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+          "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+          "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+	<session-factory>
+		<property name="myeclipse.connection.profile">
+			newton
+		</property>
+		<property name="connection.url">
+			jdbc:mysql://127.0.0.1:3306/newton?useUnicode=true&amp;characterEncoding=utf8
+		</property>
+		<property name="connection.username">root</property>
+		
+			<property name="connection.password">abcd1234</property>
+		
+		<property name="connection.driver_class">
+			com.mysql.jdbc.Driver
+		</property>
+		<property name="dialect">
+			org.hibernate.dialect.MySQLDialect
+		</property>
+
+		<property name="hibernate.connection.provider_class">
+			org.hibernate.connection.C3P0ConnectionProvider
+		</property>
+		<property name="hibernate.c3p0.acquireIncrement">2</property>
+		<property name="hibernate.c3p0.checkoutTimeout">3000</property>
+		<property name="hibernate.c3p0.idleConnectionTestPeriod">
+			2000
+		</property>
+		<property name="hibernate.c3p0.maxIdleTime">4000</property>
+		<property name="hibernate.c3p0.maxPoolSize">60</property>
+		<property name="hibernate.c3p0.minPoolSize">1</property>
+		<property name="hibernate.c3p0.maxStatements">0</property>
+
+		<property name="hibernate.c3p0.validate">true</property>
+		<property name="hibernate.c3p0.testConnectionOnCheckout">
+			true
+		</property>
+		<mapping
+			resource="/hibernate/hbm/Users.hbm.xml" />
+			<mapping resource="/hibernate/hbm/LoginLog.hbm.xml" />
+			<mapping resource="/hibernate/hbm/Address.hbm.xml" />
+			<mapping resource="/hibernate/hbm/Balance.hbm.xml" />
+			<mapping resource="/hibernate/hbm/Kyc.hbm.xml" />
+			<mapping resource="/hibernate/hbm/Transaction.hbm.xml" />
+			<mapping resource="/hibernate/hbm/WithdrawApply.hbm.xml" />
+			<mapping resource="/hibernate/hbm/LoveChain.hbm.xml" />
+	</session-factory>
+
+</hibernate-configuration>

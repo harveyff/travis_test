@@ -1,0 +1,33 @@
+package com.bytetrade.pro.bytemodule.chain;
+
+public enum OperationType {
+    TRANSFER_OPERATION,
+    ORDER_CREATE_OPERATION,
+    ORDER_CANCEL_OPERATION,
+    DEPOSIT_OPERATION,
+    WITHDRAW_OPERATION,
+    CREATE_ASSET_OPERATION,
+    CREATE_MARKET_OPERATION,
+    WITNESS_CREATE_OPERATION,
+    WITNESS_UPDATE_OPERATION,
+    DEAL_OPERATION,
+    ORDER_CANEL_SETTLEMENT_OPERATION,
+    witness_minning_rewards_OPERATION,
+    pledge_asset_OPERATION,
+    redeem_asset_OPERATION,
+    redeem_asset_settlement_OPERATION,
+    set_balance_OPERATION,
+    vote_OPERATION,
+    execute_OPERATION,
+    proposal_OPERATION,
+    withdraw_settlement_OPERATION,
+    super_deposit_OPERATION,
+    order_freeze_btt_fee_settlement_OPERATION,
+    account_create_OPERATION,
+    account_update_OPERATION,
+    account_reset_OPERATION,
+    btc_withdraw_operation,
+    WITHDRAW2_OPERATION,
+    ORDER_CREATE2_OPERATION,
+    TRANSFER2_OPERATION
+}
