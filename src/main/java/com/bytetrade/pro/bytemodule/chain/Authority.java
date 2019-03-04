@@ -10,7 +10,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 /**
  * Class used to represent the weighted set of keys and accounts that must approve operations.
  *
