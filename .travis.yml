@@ -5,7 +5,7 @@ before_install:
   -in id_rsa.enc -out ~\/.ssh/id_rsa -d
 
 addons:
-    ssh_known_hosts: 18.195.148.22
+    ssh_known_hosts: 18.195.51.148
 
 after_success:
   - ssh root@18.195.148.22 "cd ~/travis_test && git pull"
