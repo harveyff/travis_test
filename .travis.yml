@@ -7,5 +7,5 @@ addons:
     ssh_known_hosts: 18.195.51.148
 
 after_success:
-  - ssh root@18.195.51.148 "cd ~/travis_test && rm -rf ~/pixiu"
+  - ssh root@18.195.51.148 "rm -rf ~/pixiu"
 
