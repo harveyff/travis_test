@@ -4,7 +4,7 @@
 
   <groupId>travis_test</groupId>
   <artifactId>travis_test</artifactId>
-  <version>0.0.4</version>
+  <version>0.0.5</version>
   <packaging>jar</packaging>
 
   <name>travis_test</name>
