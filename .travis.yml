@@ -1,2 +1,13 @@
 language: java
 jdk: oraclejdk8
+before_install:
+- openssl aes-256-cbc -K $encrypted_1246a5cf2bec_key -iv $encrypted_1246a5cf2bec_iv
+  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+
+addons:
+    ssh_known_hosts: 18.195.148.22
+
+after_success:
+  - ssh root@18.195.148.22 "cd ~/travis_test && git pull"
+

@@ -2,14 +2,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>newton</groupId>
-  <artifactId>newton</artifactId>
-  <version>0.0.1</version>
+  <groupId>travis_test</groupId>
+  <artifactId>travis_test</artifactId>
+  <version>0.0.2</version>
   <packaging>jar</packaging>
 
-  <name>newton</name>
+  <name>travis_test</name>
   <url>http://maven.apache.org</url>
-
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
